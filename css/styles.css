@@ -8,7 +8,15 @@
 
 }
 
-.logo {
+#logo {
     font-family: 'bring_heartregular';
-    font-size: 4em!important;
+    font-size: 2.5em;    
+    margin-top: 12px;
+}
+#logo a {
+    text-decoration: none;
+}
+
+.w3-bar-block .navToggleItem {
+    text-align: center!important;
 }
