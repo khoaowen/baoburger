@@ -16,7 +16,7 @@
             body, html {height: 100%}
             .bgimg {
                 background-image: url('https://lh3.ggpht.com/p/AF1QipPrreYgokOAO_q0a5VDUO6rjHy4NEmEe1IoEmXk=s1536');
-                min-height: 80%;
+                height: 50%;
                 background-position: center;
                 background-size: cover;
             }
@@ -35,37 +35,126 @@
     </head>
     <body>
 
-        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-            <!-- Navbar -->
-            <div class="w3-top">
-              <div class="w3-bar w3-black w3-card w3-padding-large">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleNavBarFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <div class="w3-display-left w3-display-middle w3-padding-large" id="logo">
-                    <a href="#">Bao&Burgers</a>
-                </div>
-                <div class="w3-right">
-                    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACCUEIL</a>
-                    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MENU</a>
-                    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-                </div>    
-              </div>
+         <!-- Navbar -->
+        <div class="w3-top">
+          <div class="w3-bar w3-black w3-card w3-padding w3-opacity-min" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleNavBarFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <div class="w3-display-left w3-display-middle w3-padding-large" id="logo">
+                <a href="#">Bao&Burgers</a>
             </div>
+            <div class="w3-right">
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACCUEIL</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MENU</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            </div>    
+          </div>
+        </div>
 
-            <!-- Navbar on small screens -->
-            <div id="navToogle" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
-                <a href="#band" class="w3-bar-item w3-button w3-padding-large navToggleItem">ACCUEIL</a>
-                <a href="#tour" class="w3-bar-item w3-button w3-padding-large navToggleItem">MENU</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-large navToggleItem">CONTACT</a>
-            </div>           
+        <!-- Navbar on small screens -->
+        <div id="navToogle" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large navToggleItem">ACCUEIL</a>
+            <a href="#menu" class="w3-bar-item w3-button w3-padding-large navToggleItem">MENU</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large navToggleItem">CONTACT</a>
+        </div>           
+        
+        <header class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+            
+<!--            <img class="w3-image" src="https://lh3.ggpht.com/p/AF1QipPrreYgokOAO_q0a5VDUO6rjHy4NEmEe1IoEmXk=s1536" alt="Bienvenue" width="1600" height="800">-->
+            
             <div class="w3-display-middle">
-                <h1 class="w3-jumbo w3-animate-top">BIENTÔT DISPONIBLE</h1>
+                <h1 class="w3-jumbo w3-animate-top">BIENVENUE!</h1>
                 <hr class="w3-border-grey" style="margin:auto;width:40%">
                 <!--    <p class="w3-large w3-center">35 days left</p>-->
             </div>
-            <div class="w3-display-bottomleft w3-padding-large">
-                Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+
+        </header>
+        
+        <div class="w3-content" style="max-width: 1100px">
+            <!-- Contact Section -->
+            <div class="w3-container w3-padding-64" id="contact">
+                <h1 class="w3-center">Contact</h1>
+                <div class="w3-row">
+                    <!-- Shown only for big screen -->
+                    <div class="w3-center w3-container w3-half w3-hide-small">
+                        <h3 class="">Adresse</h3> 
+                        <hr class="w3-border-grey contact-bar" >    
+                        <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.fr/maps/place/277+Boulevard+Voltaire,+75011+Paris/@48.8496521,2.3921826,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67273fd1ae077:0x57a1ca69f56f07e8!8m2!3d48.8496521!4d2.3943713" target="_blank">277 Boulevard Voltaire, 75011 Paris</a></p>
+                        <h3 class="">Telephone</h3> 
+                        <hr class="w3-border-grey contact-bar " >   
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+33 (0)1 73 75 95 67" target="_blank">+33 (0)1 73 75 95 67</a> </p>
+                    </div>
+                    <!-- Shown only for small screen -->
+                    <div class="w3-center w3-container w3-half w3-hide-large w3-hide-medium">
+                        <ul class="w3-left-align">
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <a href="https://www.google.fr/maps/place/277+Boulevard+Voltaire,+75011+Paris/@48.8496521,2.3921826,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67273fd1ae077:0x57a1ca69f56f07e8!8m2!3d48.8496521!4d2.3943713" target="_blank">277 Boulevard Voltaire, 75011 Paris</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+33 (0)1 73 75 95 67" target="_blank">+33 (0)1 73 75 95 67</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <div>
+                                    <p>Lundi à Vendredi : 11:00 - 15:00, 18:00 - 23:00 </p>
+                                    <p>Samedi, Dimanche : 18:00 - 23:00</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="w3-center w3-container w3-half w3-hide-small">
+                        <h3 class="">Horaires</h3>  
+                        <hr class="w3-border-grey contact-bar" >    
+                        
+                        <table class="w3-table equalDivide ">
+                            <tr>
+                                <td>Lundi</td>
+                                <td>11:00 - 15:00, 18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Mardi</td>
+                                <td>11:00 - 15:00, 18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Mercredi</td>
+                                <td>11:00 - 15:00, 18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Jeudi</td>
+                                <td>11:00 - 15:00, 18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Vendredi</td>
+                                <td>11:00 - 15:00, 18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td>18:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Dimanche</td>
+                                <td>18:00 - 23:00</td>
+                            </tr>
+                        </table>    
+                    </div>
+                </div> 
+                <div class="w3-row">
+                <div id="map"></div>
+                </div>
+                <p>You can send us a message here:</p>
+                <form action="/action_page.php" target="_blank">
+                  <p><i class="inside fa fa-user w3-padding-16"></i><input class="w3-input w3-padding-16" type="text" placeholder="Nom*" required name="Nom" id="name"></p>
+                  <p><i class="inside fa fa-envelope w3-padding-16"></i><input class="w3-input w3-padding-16" type="text" placeholder="Email*" required name="Email" id="email"></p>
+                  <textarea class="w3-input w3-padding-16" rows="4" cols="50" type="text" placeholder="Message*" required name="Message"></textarea>
+                  <p><button class="w3-button w3-light-grey w3-section" type="submit">Envoyer message</button></p>
+                </form>
             </div>
         </div>
+        
+        
+        
         <!-- Footer -->
         <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
           <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -74,12 +163,12 @@
           <i class="fa fa-pinterest-p w3-hover-opacity"></i>
           <i class="fa fa-twitter w3-hover-opacity"></i>
           <i class="fa fa-linkedin w3-hover-opacity"></i>
-          <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+          <p class="w3-medium">© 2017 Bao&Burgers. All Rights Reserved</p>
         </footer>
         <script>
         // Automatic Slideshow - change image every 4 seconds
         var myIndex = 0;
-        carousel();
+//        carousel();
 
         function carousel() {
             var i;
@@ -110,7 +199,30 @@
             modal.style.display = "none";
           }
         }
-        </script>    
         
+        
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card w3-black w3-padding";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-black", " w3-card w3-black w3-padding w3-opacity-min ");
+            }
+        }
+        
+        function myMap() {
+          var myCenter = new google.maps.LatLng(48.849663, 2.394371);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 15};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+
+        }
+            
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu1ziiUgsT63IrR0Pi7LN9fsnh8tJUk3E&callback=myMap" type="text/javascript"></script>
     </body>
 </html>
