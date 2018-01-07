@@ -68,3 +68,18 @@ li > *, p > * {
     width:15%;
     margin-bottom: 10px;
 }
+
+.iconHoraire {
+    display: table-cell;
+    vertical-align: top;
+}
+
+i.fa.fa-check-circle {
+    float:left;
+    display:block;
+    text-align:center;
+}
+
+.horaireText {
+    display: table-cell;
+}

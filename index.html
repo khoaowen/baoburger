@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/parsley.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -31,7 +32,7 @@
 
           gtag('config', 'UA-111536968-1');
         </script>
-
+        
     </head>
     <body>
 
@@ -63,7 +64,7 @@
             
             <div class="w3-display-middle">
                 <h1 class="w3-jumbo w3-animate-top">BIENVENUE!</h1>
-                <hr class="w3-border-grey" style="margin:auto;width:40%">
+                <hr class="w3-border-white" style="margin:auto;width:40%">
                 <!--    <p class="w3-large w3-center">35 days left</p>-->
             </div>
 
@@ -78,27 +79,27 @@
                     <div class="w3-center w3-container w3-half w3-hide-small">
                         <h3 class="">Adresse</h3> 
                         <hr class="w3-border-grey contact-bar" >    
-                        <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.fr/maps/place/277+Boulevard+Voltaire,+75011+Paris/@48.8496521,2.3921826,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67273fd1ae077:0x57a1ca69f56f07e8!8m2!3d48.8496521!4d2.3943713" target="_blank">277 Boulevard Voltaire, 75011 Paris</a></p>
+                        <p class=""><a href="https://www.google.fr/maps/place/38+Rue+de+Paris,+94220+Charenton-le-Pont/@48.8191278,2.4148013,17z/data=!3m1!4b1!4m5!3m4!1s0x47e672fc7e7cb19b:0x57b22bce99b0b6f4!8m2!3d48.8191278!4d2.41699" 
+                        target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 38 rue de Paris, 94220 Charenton le Pont <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </p>
                         <h3 class="">Telephone</h3> 
                         <hr class="w3-border-grey contact-bar " >   
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+33 (0)1 73 75 95 67" target="_blank">+33 (0)1 73 75 95 67</a> </p>
+                        <p><a href="tel:+33 (0)1 73 75 95 67" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> +33 (0)1 73 75 95 67</a> </p>
                     </div>
                     <!-- Shown only for small screen -->
                     <div class="w3-center w3-container w3-half w3-hide-large w3-hide-medium">
                         <ul class="w3-left-align">
                             <li>
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <a href="https://www.google.fr/maps/place/277+Boulevard+Voltaire,+75011+Paris/@48.8496521,2.3921826,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67273fd1ae077:0x57a1ca69f56f07e8!8m2!3d48.8496521!4d2.3943713" target="_blank">277 Boulevard Voltaire, 75011 Paris</a>
+                                <a href="https://www.google.fr/maps/place/38+Rue+de+Paris,+94220+Charenton-le-Pont/@48.8191278,2.4148013,17z/data=!3m1!4b1!4m5!3m4!1s0x47e672fc7e7cb19b:0x57b22bce99b0b6f4!8m2!3d48.8191278!4d2.41699" target="_blank">38 rue de Paris, 94220 Charenton le Pont <i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </li>
                             <li>
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 <a href="tel:+33 (0)1 73 75 95 67" target="_blank">+33 (0)1 73 75 95 67</a>
                             </li>
                             <li>
-                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <div>
-                                    <p>Lundi à Vendredi : 11:00 - 15:00, 18:00 - 23:00 </p>
-                                    <p>Samedi, Dimanche : 18:00 - 23:00</p>
+                                <div class="iconHoraire"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                <div class="horaireText">Lundi à Vendredi : 11:00 - 15:00, 18:00 - 23:00 <br>Samedi, Dimanche : 18:00 - 23:00
                                 </div>
                             </li>
                         </ul>
@@ -140,14 +141,15 @@
                         </table>    
                     </div>
                 </div> 
-                <div class="w3-row">
-                <div id="map"></div>
+                <div class="w3-row" style="margin-bottom: 20px;">
+                    <div id="map"></div>
                 </div>
-                <p>You can send us a message here:</p>
-                <form action="/action_page.php" target="_blank">
-                  <p><i class="inside fa fa-user w3-padding-16"></i><input class="w3-input w3-padding-16" type="text" placeholder="Nom*" required name="Nom" id="name"></p>
-                  <p><i class="inside fa fa-envelope w3-padding-16"></i><input class="w3-input w3-padding-16" type="text" placeholder="Email*" required name="Email" id="email"></p>
-                  <textarea class="w3-input w3-padding-16" rows="4" cols="50" type="text" placeholder="Message*" required name="Message"></textarea>
+                <p>Vous pouvez également nous contacter via ce formulaire:</p>
+                <form id="ajax-contact-form" method="post" action="action_page.php" data-parsley-validate="">
+                  <div id="form-messages"></div>
+                  <p><i class="inside fa fa-user w3-padding-16"></i><input class="w3-input w3-padding-16" type="text" placeholder="Nom*" required name="name" id="name" data-parsley-trigger="change"></p>
+                  <p><i class="inside fa fa-envelope w3-padding-16"></i><input class="w3-input w3-padding-16" type="email" placeholder="Email*" required name="email" id="email" data-parsley-trigger="change"></p>
+                  <textarea class="w3-input w3-padding-16" rows="4" cols="50" type="text" placeholder="Message*" required name="message" id="message" data-parsley-trigger="change"></textarea>
                   <p><button class="w3-button w3-light-grey w3-section" type="submit">Envoyer message</button></p>
                 </form>
             </div>
@@ -213,7 +215,7 @@
         }
         
         function myMap() {
-          var myCenter = new google.maps.LatLng(48.849663, 2.394371);
+          var myCenter = new google.maps.LatLng(48.819139, 2.417003);
           var mapCanvas = document.getElementById("map");
           var mapOptions = {center: myCenter, zoom: 15};
           var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -224,5 +226,10 @@
             
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu1ziiUgsT63IrR0Pi7LN9fsnh8tJUk3E&callback=myMap" type="text/javascript"></script>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/parsley.min.2.8.0.js"></script>
+        <script src="js/parsley_error_msg_fr.js"></script>
+        <script src="js/mailer.js"></script>
     </body>
 </html>
