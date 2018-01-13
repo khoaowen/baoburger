@@ -34,7 +34,7 @@
         </script>
         
     </head>
-    <body>
+    <body style="max-width: 2100px">
 
          <!-- Navbar -->
         <div class="w3-top">
@@ -58,6 +58,7 @@
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large navToggleItem">CONTACT</a>
         </div>           
         
+        <!-- Header with image -->
         <header class="bgimg w3-display-container w3-animate-opacity w3-text-white">
             
 <!--            <img class="w3-image" src="https://lh3.ggpht.com/p/AF1QipPrreYgokOAO_q0a5VDUO6rjHy4NEmEe1IoEmXk=s1536" alt="Bienvenue" width="1600" height="800">-->
@@ -70,7 +71,138 @@
 
         </header>
         
-        <div class="w3-content" style="max-width: 1100px">
+<!--        <div class="w3-content" style="max-width: 1100px">-->
+            <!-- Menu Container -->
+            
+            <!-- First Photo Grid-->
+            <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+                <div class="w3-quarter">
+                  <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+                  <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                  <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+                  <h3>Let Me Tell You About This Steak</h3>
+                  <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+                  <h3>Cherries, interrupted</h3>
+                  <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                  <p>What else?</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+                  <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                  <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+            </div>
+
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                  <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+                  <h3>All I Need Is a Popsicle</h3>
+                  <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+                  <h3>Salmon For Your Skin</h3>
+                  <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+                  <h3>The Perfect Sandwich, A Real Classic</h3>
+                  <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="w3-quarter">
+                  <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+                  <h3>Le French</h3>
+                  <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+              <div class="w3-content">
+                <h1 class="w3-center">Menu</h1>
+                <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                  <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+                  </a>
+                  <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+                  </a>
+                  <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+                  </a>
+                </div>
+
+                <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                  <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                  <hr>
+
+                  <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                  <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                  <hr>
+
+                  <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                  <hr>
+
+                  <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                  <hr>
+
+                  <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                  <hr>
+
+                  <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+
+                <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                  <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                  <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                  <hr>
+
+                  <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+                  <p class="w3-text-grey">Ravioli filled with cheese</p>
+                  <hr>
+
+                  <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+                  <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+                  <hr>
+
+                  <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+                  <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+                </div>
+
+
+                <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                  <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                  <p class="w3-text-grey">Ask the waiter</p>
+                  <hr>
+
+                  <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                  <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                  <hr>
+
+                  <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                  <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                  <hr>
+
+                  <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                  <p class="w3-text-grey">Tomatoes and mozzarella</p>
+                </div><br>
+
+              </div>
+            </div>
+            
             <!-- Contact Section -->
             <div class="w3-container w3-padding-64" id="contact">
                 <h1 class="w3-center">Contact</h1>
@@ -109,7 +241,7 @@
                         <h3 class="">Horaires</h3>  
                         <hr class="w3-border-grey contact-bar" >    
                         
-                        <table class="w3-table equalDivide ">
+                        <table class="w3-table equalDivide">
                             <tr>
                                 <td>Lundi</td>
                                 <td>11:00 - 15:00, 18:00 - 23:00</td>
@@ -153,7 +285,7 @@
                   <p><button class="w3-button w3-light-grey w3-section" type="submit">Envoyer message</button></p>
                 </form>
             </div>
-        </div>
+<!--        </div>-->
         
         
         
@@ -213,6 +345,22 @@
                 navbar.className = navbar.className.replace(" w3-card w3-black", " w3-card w3-black w3-padding w3-opacity-min ");
             }
         }
+            
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();    
         
         function myMap() {
           var myCenter = new google.maps.LatLng(48.819139, 2.417003);

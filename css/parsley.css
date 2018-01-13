@@ -34,7 +34,7 @@ textarea.parsley-error {
 
 
 .parsley-errors-list li, .parsley-required, .parsley-errors-list .parsley-required {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     color: #f44336;
-    margin-bottom: 12px;
 }
