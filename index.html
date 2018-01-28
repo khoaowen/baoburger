@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bao&Burgers</title>
+        <title>LittleViet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
@@ -41,7 +41,7 @@
           <div class="w3-bar w3-black w3-card w3-padding w3-opacity-min" id="myNavbar">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleNavBarFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <div class="w3-display-left w3-display-middle w3-padding-large" id="logo">
-                <a href="#">Bao&Burgers</a>
+                <a href="#">LittleViet</a>
             </div>
             <div class="w3-right">
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACCUEIL</a>
@@ -56,11 +56,18 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-large navToggleItem">ACCUEIL</a>
             <a href="#menu" class="w3-bar-item w3-button w3-padding-large navToggleItem">MENU</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large navToggleItem">CONTACT</a>
-        </div>           
-        
+        </div>        
+
         <!-- Header with image -->
         <header class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-            
+
+<!--
+        <div class="w3-hide-small header-video">
+            <video autoplay muted loop id="myVideo">
+                <source src="/vid/Burger%20Deconstructed%20in%20Slow%20Motion%20on%20Vimeo.MP4" type="video/mp4">
+            </video>
+        </div>
+-->
 <!--            <img class="w3-image" src="https://lh3.ggpht.com/p/AF1QipPrreYgokOAO_q0a5VDUO6rjHy4NEmEe1IoEmXk=s1536" alt="Bienvenue" width="1600" height="800">-->
             
             <div class="w3-display-middle">
@@ -71,29 +78,29 @@
 
         </header>
         
-<!--        <div class="w3-content" style="max-width: 1100px">-->
+        <div class="w3-content" style="max-width: 2000px">
             <!-- Menu Container -->
             
             <!-- First Photo Grid-->
             <div class="w3-row-padding w3-padding-16 w3-center" id="food">
                 <div class="w3-quarter">
-                  <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Sandwich" style="width:100%">
                   <h3>The Perfect Sandwich, A Real NYC Classic</h3>
                   <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Steak" style="width:100%">
                   <h3>Let Me Tell You About This Steak</h3>
                   <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Cherries" style="width:100%">
                   <h3>Cherries, interrupted</h3>
                   <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                   <p>What else?</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Pasta and Wine" style="width:100%">
                   <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
                   <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
@@ -102,22 +109,22 @@
             <!-- Second Photo Grid-->
             <div class="w3-row-padding w3-padding-16 w3-center">
                 <div class="w3-quarter">
-                  <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Popsicle" style="width:100%">
                   <h3>All I Need Is a Popsicle</h3>
                   <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Salmon" style="width:100%">
                   <h3>Salmon For Your Skin</h3>
                   <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Sandwich" style="width:100%">
                   <h3>The Perfect Sandwich, A Real Classic</h3>
                   <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
                 <div class="w3-quarter">
-                  <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+                  <img src="/img/hamburger.jpg" alt="Croissant" style="width:100%">
                   <h3>Le French</h3>
                   <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
                 </div>
@@ -125,7 +132,7 @@
             
             
             
-            <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-container w3-padding-64 w3-xxlarge" id="menu">
               <div class="w3-content">
                 <h1 class="w3-center">Menu</h1>
                 <div class="w3-row w3-center w3-border w3-border-dark-grey">
@@ -140,7 +147,7 @@
                   </a>
                 </div>
 
-                <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <div id="Pizza" class="w3-container menu w3-padding-32 w3-white w3-border">
                   <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
                   <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
                   <hr>
@@ -165,7 +172,7 @@
                   <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
                 </div>
 
-                <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                <div id="Pasta" class="w3-container menu w3-padding-32 w3-white w3-border">
                   <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
                   <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
                   <hr>
@@ -183,7 +190,7 @@
                 </div>
 
 
-                <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <div id="Starter" class="w3-container menu w3-padding-32 w3-white w3-border">
                   <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
                   <p class="w3-text-grey">Ask the waiter</p>
                   <hr>
@@ -206,7 +213,7 @@
             <!-- Contact Section -->
             <div class="w3-container w3-padding-64" id="contact">
                 <h1 class="w3-center">Contact</h1>
-                <div class="w3-row">
+                <div class="w3-row w3-content">
                     <!-- Shown only for big screen -->
                     <div class="w3-center w3-container w3-half w3-hide-small">
                         <h3 class="">Adresse</h3> 
@@ -276,7 +283,7 @@
                 <div class="w3-row" style="margin-bottom: 20px;">
 <!--                    <div id="map"></div>-->
                     <div class="google-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17660.972139462523!2d2.3935661624301456!3d48.85212300589941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d9cb7248ee29d05!2sBao+burger+Paris!5e0!3m2!1sfr!2sfr!4v1515852721090" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.0489335055177!2d2.414801315672969!3d48.81912777928362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672fc7e7cb19b%3A0x57b22bce99b0b6f4!2s38+Rue+de+Paris%2C+94220+Charenton-le-Pont!5e0!3m2!1sfr!2sfr!4v1517145228249" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <p>Vous pouvez également nous contacter via ce formulaire:</p>
@@ -288,7 +295,7 @@
                   <p><button class="w3-button w3-light-grey w3-section" type="submit">Envoyer message</button></p>
                 </form>
             </div>
-<!--        </div>-->
+        </div>
         
         
         
@@ -300,7 +307,7 @@
           <i class="fa fa-pinterest-p w3-hover-opacity"></i>
           <i class="fa fa-twitter w3-hover-opacity"></i>
           <i class="fa fa-linkedin w3-hover-opacity"></i>
-          <p class="w3-medium">© 2017 Bao&Burgers. All Rights Reserved</p>
+          <p class="w3-medium">© 2017 LittleViet. All Rights Reserved</p>
         </footer>
         <script>
         // Automatic Slideshow - change image every 4 seconds
